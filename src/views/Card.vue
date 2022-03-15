@@ -25,7 +25,6 @@ export default {
     }
   },
   created() {
-  console.log(this.$route)
     axios.get('https://rickandmortyapi.com/api/character/'+this.$route.params.id)
         .then(response => {
           this.card = response.data
